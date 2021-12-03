@@ -28,6 +28,23 @@ h3{
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center; 
     padding: 5px;
+    
+}
+
+/* Parallax effect */
+.title{
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center; 
+    padding: 20px;
+    background-attachment: fixed; 
+    background-position: center; 
+    background-size: cover; 
+    background-color: black;
+    color: #fff48f;
+    height: 500px; 
+    background-image: url("../images/big_house.JPG");
+    background-repeat: no-repeat;
 }
 
 h4{
@@ -129,12 +146,13 @@ img{
     max-width: 100%;
 }
 
-#bighouse{
+/* #bighouse{
     grid-column: 1/-1;
     /* grid-row: 1/2; */
-}
+/* }  */
 #about_me{
     grid-column: 1/-1;
+    line-height: 1.3;
     /* grid-row:2/3; */
 }
 #headshot{
@@ -143,6 +161,7 @@ img{
 }
 #description{
     grid-column: 1/-1;
+    line-height: 1.3;
     /* grid-row: 4/5; */
 }
 
@@ -161,7 +180,6 @@ img{
 #wilmas{
     grid-column: 1/-1;
     /* grid-row: 9/10; */
-    padding-bottom: 30px;
 }
 #arb{
     grid-column: 1/-1;
@@ -177,8 +195,16 @@ img{
 }
 #sunset{
     grid-column: 1/-1;
-    padding-bottom: 75px;
     /* grid-row: 13/-1; */
+}
+#extra_p{
+    grid-column: 1/-1;
+    line-height: 1.3; 
+}
+
+#city{
+    grid-column: 1/-1;
+    padding-bottom: 75px;
 }
 
 /* IMAGES FROM EXPERIENCE PAGE HERE */
@@ -189,6 +215,7 @@ img{
 #GM_text{
     margin: 0px 30px 0px 30px;
     padding-bottom: 5px;
+    line-height: 1.3;
 }
 
 #morningbrew{
@@ -197,6 +224,7 @@ img{
 #morningbrew_text{
     margin: 0px 30px 0px 30px;
     padding-bottom: 5px;
+    line-height: 1.3;
 }
 
 #tennis{
@@ -205,6 +233,7 @@ img{
 #tennis_text{
     margin: 0px 30px 0px 30px;
     padding-bottom: 5px;
+    line-height: 1.3;
 }
 
 #leanin{
@@ -214,6 +243,7 @@ img{
 #leanin_text{
     margin: 0px 30px 0px 30px;
     padding-bottom: 5px;
+    line-height: 1.3;
 }
 
 #ACS{
@@ -223,6 +253,7 @@ img{
 #ACS_text{
     margin: 0px 30px 0px 30px;
     padding-bottom: 5px;
+    line-height: 1.3;
 }
 
 #chio{
@@ -232,20 +263,23 @@ img{
 #chio_text{
     margin: 0px 30px 0px 30px;
     padding-bottom: 60px;
+    line-height: 1.3;
 }
 
 /* SKILLS PAGE HERE */
 .container_skills{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-row-gap: 20px;
 }
 
 #microsoftlogo{
     /* display:block; */
     padding-left: 10px;
-    width: 10%;
+    width: 15%;
+    /* justify-content: center; */
+    justify-self: center;
     grid-column:1/2;
     grid-row: 1/2;
 }
@@ -254,6 +288,7 @@ img{
     padding-right: 10px;
     grid-column: 2/-1;
     grid-row: 1/2;
+    line-height: 1.3;
 }
 
 /* not working */
@@ -261,11 +296,14 @@ img{
     padding-right: 10px;
     grid-column: 2/-1;
     grid-row: 2/3;
+    line-height: 1.3;
 }
 
 #adobelogo{
     padding-left: 10px;
-    width: 10%;
+    width: 15%;
+    justify-self: center;
+    /* justify-content: center; */
     grid-column: 1/2;
     grid-row: 2/3;
 }
@@ -274,30 +312,49 @@ img{
     padding-right: 10px;
     grid-column: 2/-1;
     grid-row: 3/4;
+    line-height: 1.3;
 }
 
 #pythonlogo{
     padding-left: 10px;
-    width: 10%;
+    width: 18%;
+    justify-self: center;
+    /* justify-content: center; */
     grid-column: 1/2;
     grid-row: 3/4;
 }
 
-
 #class{
+    padding-top: 30px;
     padding-left: 10px;
     padding-right: 10px;
     grid-column: 1/-1;
-    grid-row: 5/-1;
-
+    grid-row: 4/-1;
+    line-height: 1.3;
 }
 
 form{
-	background: #eaebe9;
+	background: #fcf7c4;
 	padding-left: 30px 20px 30px 20px;
 	width: 100%;
     text-align: center;
 }
+input[type=text], select {
+    width: 80%;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 20px;
+    margin: 8px 0;
+    border: 2px solid #838383;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=text]:focus {
+    border: 3px solid #555;
+    border-radius: 20px;
+  }
+  
 
 @media screen and (min-width: 750px) {
     body{
@@ -308,22 +365,23 @@ form{
     }
     
     .container{
-        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto auto auto auto auto auto;
         /* grid-template-rows: repeat(6, 500px); */
         grid-row-gap: 10px;
     }
-    #bighouse{
+    /* #bighouse{
         grid-column: 1/span 3;
         grid-row: 1/2;
-    }
+    } */
+
     #about_me{
         grid-column: 2/3;
         grid-row:2/3;
         padding-top: 50px;
         padding-right: 10px;
         padding-left: 10px;
+        
     }
     #headshot{
         grid-column: 2/3;
@@ -335,6 +393,7 @@ form{
         padding-top: 50px;
         padding-right: 10px;
         padding-left: 10px;
+        
     }
     #extra_p{
         grid-column: 2/3;
@@ -375,7 +434,11 @@ form{
     #sunset{
         grid-column: 3/4;
         grid-row: 6/-1;
-        padding-top: 35px;
+    }
+
+    #city{
+        grid-column: 2/3;
+        grid-row: 6/-1
     }
 
     /* WHY IS THIS NOT CHANGING ANYTHING */
@@ -390,29 +453,87 @@ form{
         justify-content: flex-end; */
       }
 
+      #microsoftlogo{
+        /* display:block; */
+        padding-left: 10px;
+        width: 20%;
+        justify-self: center;
+
+    }
+    
+    #microsoft_text{
+        padding-right: 10px;
+    }
+    
+    /* not working */
+    #adobe_text{
+        padding-right: 10px;
+        
+    }
+    
+    #adobelogo{
+        padding-left: 10px;
+        width: 20%;
+        justify-self: center;
+        
+    }
+    
+    #coding{
+        padding-right: 10px;
+    }
+    
+    #pythonlogo{
+        padding-left: 10px;
+        width: 20%;
+        justify-self: center;
+        
+    }
+    
+    
+    #class{
+        padding-left: 10px;
+        padding-right: 10px; 
+    }
     
 }
 
 @media screen and (min-width: 1200px) {
+
     body{
         font-size: 22px;
         margin: 10px;
         padding: 0;
         text-align: center;
     }
+
     .container{
-        display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: auto auto auto auto auto auto;
         /* grid-template-rows: repeat(6, 500px); */
         grid-row-gap: 25px;
     }
-    #bighouse{
+
+    /* #bighouse{
         grid-column: 1/span 4;
         grid-row: 1/2;
+    } */
+
+    /* h3{
+        background-attachment: fixed; /* Parallax effect */
+        /* background-position: center; /* Parallax effect */
+        /* background-size: cover; Parallax effect */
+        /* color: white;
+        height: 500px; Parallax effect  */
+
+        /* YOUR CODE HERE; */
+        /* background-image: url("../images/big_house.JPG");
+        background-repeat: no-repeat;
+    } */ 
+
+    /* #bighouse:hover{
         filter: opacity(70%);
-        border: 5px dashed #c767a0;
-    }
+    } */
+
     #about_me{
         grid-column: 1/span 4;
         grid-row:2/3;
@@ -420,27 +541,99 @@ form{
         padding-right: 10px;
         padding-left: 10px;
         padding-bottom: 25px;
+    }
+
+    #about_me:hover{
         border: 2px solid #c767a0;
     }
+
     #headshot{
         grid-column: 2/4;
         grid-row: 3/4;
+    }
+
+    #headshot:hover{
         border: 5px dashed #c767a0;
     }
+     .flip-card { 
+        padding-bottom: 75px;
+        background-color: transparent;
+        padding-bottom: 100px;
+        width: 100%;
+        height: 100%;
+        perspective: 1000px; /* Remove this if you don't want the 3D effect */
+      } 
+      
+      /* This container is needed to position the front and back side */
+      .flip-card-inner {
+        grid-column: 2/4;
+        grid-row: 3/4;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+      } 
+      
+      /* Do an horizontal flip when you move the mouse over the flip box container */
+      .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+      } 
+      /* STILL NOT WORKING */
+
+      /* .flip-card:focus-within .flip-card-inner{
+        transform: rotateY(180deg);
+    }  */
+      
+      /* Position the front and back side */
+      .flip-card-front, .flip-card-back {
+        grid-column: 2/4;
+        grid-row: 3/4;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden; /* Safari */
+        backface-visibility: hidden;
+      } 
+      
+      /* Style the front side (fallback if image is missing) */
+       .flip-card-front {
+        background-color: #fcf7c4;
+        color: black;
+      } 
+      
+      /* Style the back side */
+     .flip-card-back {
+        background-color: transparent;
+        color: black;
+        transform: rotateY(180deg);
+      } 
+
     #description{
         grid-column: 1/span 4;
         grid-row: 5/6;
         padding-top: 25px;
         padding-right: 10px;
         padding-left: 10px;
+        padding-bottom: 25px;
+
+    }
+
+    #description:hover{
         border: 2px solid #c767a0;
     }
+
     #extra_p{
         grid-column: 2/4;
         grid-row: 6/7;
         padding-top: 200px;
         padding-right: 10px;
         padding-left: 10px;
+        padding-bottom: 200px;
+    }
+
+    #extra_p:hover{
         border: 2px solid #c767a0;
     }
     
@@ -457,8 +650,9 @@ form{
         grid-row: 4/5;
     }
     #wilmas{
-        grid-column: 1/2;
+        grid-column: 2/4;
         grid-row: 7/-1;
+        max-height: 500px;
     }
     #arb{
         grid-column: 3/4;
@@ -475,7 +669,12 @@ form{
     #sunset{
         grid-column: 4/-1;
         grid-row: 7/-1;
-        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+
+    #city{
+        grid-column: 1/2;
+        grid-row: 7/-1;
     }
 
     nav ul {
@@ -483,69 +682,24 @@ form{
         flex-direction: row;
         justify-content: flex-end;
     }
-    .container_skills{
-        display: grid;
-        grid-template-columns: 0.5fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-        grid-row-gap: 10px;
-    }
-    
-    #microsoftlogo{
-        /* display:block; */
-        padding-left: 10px;
-        width: 20%;
-        grid-column:2/3;
-        grid-row: 1/2;
-        border: 3px dashed #c767a0;
-    }
-    
-    #microsoft_text{
-        padding-right: 10px;
-        grid-column: 3/-1;
-        grid-row: 1/2;
-        border: 3px solid #c767a0;
-    }
-    
-    /* not working */
-    #adobe_text{
-        padding-right: 10px;
-        grid-column: 3/-1;
-        grid-row: 2/3;
-        border: 3px solid #c767a0;
-    }
-    
+
     #adobelogo{
-        padding-left: 10px;
-        width: 20%;
-        grid-column: 2/3;
-        grid-row: 2/3;
-        border: 3px dashed #c767a0;
+        animation-name: stretch;
+        animation-duration: 5s;
     }
-    
-    #coding{
-        padding-right: 10px;
-        grid-column: 3/-1;
-        grid-row: 3/4;
-        border: 3px solid #c767a0;
-    }
-    
-    #pythonlogo{
-        padding-left: 10px;
-        width: 20%;
-        grid-column: 2/3;
-        grid-row: 3/4;
-        border: 3px dashed #c767a0;
-    }
-    
-    
-    #class{
-        padding-left: 10px;
-        padding-right: 10px;
-        grid-column: 1/-1;
-        grid-row: 5/-1;
-        border: 3px solid #c767a0;
+
+    @keyframes stretch{
+        from{
+            width: 50px;
+            opacity: 0;
+        }
+        to{
+            width: 200px;
+            opacity: 1;
+        }
     }
 }
+    
 
 @media screen and (prefers-reduced-motion: reduce){
     /*Turn off scroll*/
@@ -555,5 +709,16 @@ form{
     .skip a{
       -webkit-transition: initial; 
       transition: initial; 
+    }
+
+    .flip-card-inner{
+        transition: none;
+    }
+    #adobelogo{
+        animation: none;
+    }
+
+    #title{
+        background-attachment: initial;
     }
 }
