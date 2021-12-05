@@ -64,7 +64,6 @@ nav li{
     display:inline;
     padding-right: 20px;
     padding-top: 10px;
-    /* fix the width */
 }
 
 nav{
@@ -77,9 +76,7 @@ nav{
 footer{
     background-color: #fff48f;
     color: black;
-    /* padding-top: 10px; */
     text-align: center;  
-    /* WHY WON'T STAY ON BOTTOM */
     width: 100%;
     position: fixed;
     bottom: 0;
@@ -132,10 +129,6 @@ nav #current{
     display: grid;
     grid-template-columns: 1fr;
     grid-row-gap: 15px;
-    /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ; */
-    
-    /* grid-template-rows: auto auto auto auto; */
-    /* grid-row-gap: 20px; */
 }   
 
 /* ALL IMAGE STYLING HERE */
@@ -146,56 +139,52 @@ img{
     max-width: 100%;
 }
 
-/* #bighouse{
-    grid-column: 1/-1;
-    /* grid-row: 1/2; */
-/* }  */
 #about_me{
     grid-column: 1/-1;
     line-height: 1.3;
-    /* grid-row:2/3; */
+   
 }
 #headshot{
     grid-column: 1/-1;
-    /* grid-row: 3/4; */
+
 }
 #description{
     grid-column: 1/-1;
     line-height: 1.3;
-    /* grid-row: 4/5; */
+
 }
 
 #monty{
     grid-column: 1/-1;
-    /* grid-row: 5/6; */
+
 }
 #manor{
     grid-column: 1/-1;
-    /* grid-row: 6/7; */
+
 }
 #family{
     grid-column: 1/-1;
-    /* grid-row: 7/8; */
+
 }
 #wilmas{
     grid-column: 1/-1;
-    /* grid-row: 9/10; */
+ 
 }
 #arb{
     grid-column: 1/-1;
-    /* grid-row: 10/11; */
+    
 }
 #jacket{
     grid-column: 1/-1;
-    /* grid-row: 11/12; */
+    
 }
 #rainbow{
     grid-column: 1/-1;
-    /* grid-row: 12/13; */
+   
 }
 #sunset{
     grid-column: 1/-1;
-    /* grid-row: 13/-1; */
+   
 }
 #extra_p{
     grid-column: 1/-1;
@@ -207,63 +196,119 @@ img{
     padding-bottom: 75px;
 }
 
-/* IMAGES FROM EXPERIENCE PAGE HERE */
+.container_experiences{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 15px;
+}
+#section1{
+    grid-column: 1/-1;
+}
 
 #GM{
+    grid-column: 1/-1;
     width: 20%;
+    justify-self: center;
+}
+#co_titleGM{
+    grid-column: 1/-1;
+}
+#positionGM{
+    grid-column: 1/-1;
 }
 #GM_text{
-    margin: 0px 30px 0px 30px;
-    padding-bottom: 5px;
+    grid-column: 1/-1;
     line-height: 1.3;
+    margin: 0px 30px 0px 30px; 
 }
 
 #morningbrew{
-    width: 20%;
+    grid-column: 1/-1;
+    width: 35%;
+    justify-self: center;
+    padding-top: 30px;
+}
+#co_titleMB{
+    grid-column: 1/-1;
+}
+#positionMB{
+    grid-column: 1/-1;
 }
 #morningbrew_text{
-    margin: 0px 30px 0px 30px;
-    padding-bottom: 5px;
+    grid-column: 1/-1;
     line-height: 1.3;
+    margin: 0px 30px 0px 30px;
 }
 
 #tennis{
-    width: 15%;
+    grid-column: 1/-1;
+    width: 20%;
+    justify-self: center;
+    padding-top: 30px;
+}
+#co_titleJM{
+    grid-column: 1/-1;
+}
+#positionJM{
+    grid-column: 1/-1;
 }
 #tennis_text{
-    margin: 0px 30px 0px 30px;
-    padding-bottom: 5px;
+    grid-column: 1/-1;
     line-height: 1.3;
+    margin: 0px 30px 0px 30px;
+}
+
+#section2{
+    grid-column: 1/-1;
 }
 
 #leanin{
-    width: 10%;
+    grid-column: 1/-1;
+    width: 20%;
+    justify-self: center;
+    padding-top: 30px;
 }
-
+#co_titleL{
+    grid-column: 1/-1;
+    
+}
+#positionL{
+    grid-column: 1/-1;
+}
 #leanin_text{
-    margin: 0px 30px 0px 30px;
-    padding-bottom: 5px;
+    grid-column: 1/-1;
     line-height: 1.3;
+    margin: 0px 30px 0px 30px;
 }
 
 #ACS{
-    width: 10%;
+    grid-column: 1/-1;
+    width: 20%;
+    justify-self: center;
+    padding-top: 30px;
 }
-
+#co_titleACS{
+    grid-column: 1/-1;
+}
 #ACS_text{
+    grid-column: 1/-1;
     margin: 0px 30px 0px 30px;
-    padding-bottom: 5px;
-    line-height: 1.3;
 }
 
 #chio{
-    width: 10%;
+    grid-column: 1/-1;
+    width: 20%;
+    justify-self: center;
+    padding-top: 30px;
 }
-
+#co_titleXO{
+    grid-column: 1/-1;
+}
 #chio_text{
-    margin: 0px 30px 0px 30px;
-    padding-bottom: 60px;
+    grid-column: 1/-1;
+    padding-bottom: 70px;
     line-height: 1.3;
+    margin: 0px 30px 0px 30px;
 }
 
 /* SKILLS PAGE HERE */
@@ -275,10 +320,8 @@ img{
 }
 
 #microsoftlogo{
-    /* display:block; */
     padding-left: 10px;
     width: 15%;
-    /* justify-content: center; */
     justify-self: center;
     grid-column:1/2;
     grid-row: 1/2;
@@ -291,7 +334,7 @@ img{
     line-height: 1.3;
 }
 
-/* not working */
+
 #adobe_text{
     padding-right: 10px;
     grid-column: 2/-1;
@@ -303,7 +346,6 @@ img{
     padding-left: 10px;
     width: 15%;
     justify-self: center;
-    /* justify-content: center; */
     grid-column: 1/2;
     grid-row: 2/3;
 }
@@ -319,7 +361,6 @@ img{
     padding-left: 10px;
     width: 18%;
     justify-self: center;
-    /* justify-content: center; */
     grid-column: 1/2;
     grid-row: 3/4;
 }
@@ -367,13 +408,9 @@ input[type=text]:focus {
     .container{
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto auto auto auto auto auto;
-        /* grid-template-rows: repeat(6, 500px); */
         grid-row-gap: 10px;
     }
-    /* #bighouse{
-        grid-column: 1/span 3;
-        grid-row: 1/2;
-    } */
+ 
 
     #about_me{
         grid-column: 2/3;
@@ -440,21 +477,147 @@ input[type=text]:focus {
         grid-column: 2/3;
         grid-row: 6/-1
     }
+    .container_experiences{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-row-gap: 15px;
+    }
+    #section1{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    
+    #GM{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        width: 50%;
+        
+    }
+    #co_titleGM{
+        grid-column: 2/4;
+        padding-bottom: 5px;
+        grid-row: 2/3;
+    }
+    #positionGM{
+        grid-column: 2/4;
+        grid-row: 2/3;
+        padding-top: 30px;
+    }
+    #GM_text{
+        grid-column: 2/4;
+        grid-row: 2/3;
+        padding-top: 45px;
+    }
+    
+    
+    #morningbrew{
+        grid-column: 3/4;
+        grid-row: 3/4;
+        width: 50%;
+        
+    }
+    #co_titleMB{
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+    #positionMB{
+        grid-column: 1/3;
+        grid-row: 3/4;
+        padding-top: 30px;
+    }
+    #morningbrew_text{
+        grid-column: 1/3;
+        grid-row: 3/4;
+        padding-top: 45px;
+    }
 
-    /* WHY IS THIS NOT CHANGING ANYTHING */
+    
+    #tennis{
+        grid-column: 1/2;
+        grid-row: 4/5;
+        width: 50%;
+    }
+    #co_titleJM{
+        grid-column: 2/4;
+        grid-row: 4/5;
+    }
+    #positionJM{
+        grid-column: 2/4;
+        grid-row: 4/5;
+        padding-top: 30px;
+    }
+    #tennis_text{
+        grid-column: 2/4;
+        grid-row: 4/5;
+        padding-top: 60px;
+    }
+    
+    #section2{
+        grid-column: 2/3;
+        grid-row: 5/6;
+    }
+    
+    #leanin{
+        grid-column: 3/4;
+        grid-row: 6/7;
+        width: 50%;
+    }
+    #co_titleL{
+        grid-column: 1/3;
+        grid-row: 6/7;
+        
+    }
+    #positionL{
+        grid-column: 1/3;
+        grid-row: 6/7;
+        padding-top: 30px;
+    }
+    #leanin_text{
+        grid-column: 1/3;
+        grid-row: 6/7;
+        padding-top:60px;
+    }
+    
+    #ACS{
+        grid-column: 1/2;
+        grid-row: 7/8;
+        width: 50%;
+    }
+    #co_titleACS{
+        grid-column: 2/4;
+        grid-row: 7/8;
+    }
+    #ACS_text{
+        grid-column: 2/4;
+        grid-row: 7/8;
+        padding-top: 30px;
+    }
+    
+    #chio{
+        grid-column: 3/4;
+        grid-row: 8/-1;
+        width: 50%;
+        padding-bottom: 100px;
+    }
+    #co_titleXO{
+        grid-column: 1/3;
+        grid-row: 8/-1;
+    }
+    #chio_text{
+        grid-column: 1/3;
+        grid-row: 8/-1;
+        padding-top: 30px;
+        
+    }
+
+
     nav ul {
-        display: flex;
         flex-direction: row;
         justify-content: space-around;
         
-        /* why will nothing in flex row work */
-
-        /* flex-direction: row;
-        justify-content: flex-end; */
       }
 
       #microsoftlogo{
-        /* display:block; */
         padding-left: 10px;
         width: 20%;
         justify-self: center;
@@ -465,7 +628,7 @@ input[type=text]:focus {
         padding-right: 10px;
     }
     
-    /* not working */
+
     #adobe_text{
         padding-right: 10px;
         
@@ -509,30 +672,8 @@ input[type=text]:focus {
     .container{
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: auto auto auto auto auto auto;
-        /* grid-template-rows: repeat(6, 500px); */
         grid-row-gap: 25px;
     }
-
-    /* #bighouse{
-        grid-column: 1/span 4;
-        grid-row: 1/2;
-    } */
-
-    /* h3{
-        background-attachment: fixed; /* Parallax effect */
-        /* background-position: center; /* Parallax effect */
-        /* background-size: cover; Parallax effect */
-        /* color: white;
-        height: 500px; Parallax effect  */
-
-        /* YOUR CODE HERE; */
-        /* background-image: url("../images/big_house.JPG");
-        background-repeat: no-repeat;
-    } */ 
-
-    /* #bighouse:hover{
-        filter: opacity(70%);
-    } */
 
     #about_me{
         grid-column: 1/span 4;
@@ -561,10 +702,10 @@ input[type=text]:focus {
         padding-bottom: 100px;
         width: 100%;
         height: 100%;
-        perspective: 1000px; /* Remove this if you don't want the 3D effect */
+        perspective: 1000px; 
       } 
       
-      /* This container is needed to position the front and back side */
+     
       .flip-card-inner {
         grid-column: 2/4;
         grid-row: 3/4;
@@ -576,34 +717,27 @@ input[type=text]:focus {
         transform-style: preserve-3d;
       } 
       
-      /* Do an horizontal flip when you move the mouse over the flip box container */
       .flip-card:hover .flip-card-inner {
         transform: rotateY(180deg);
       } 
-      /* STILL NOT WORKING */
-
-      /* .flip-card:focus-within .flip-card-inner{
-        transform: rotateY(180deg);
-    }  */
       
-      /* Position the front and back side */
       .flip-card-front, .flip-card-back {
         grid-column: 2/4;
         grid-row: 3/4;
         position: absolute;
         width: 100%;
         height: 100%;
-        -webkit-backface-visibility: hidden; /* Safari */
+        -webkit-backface-visibility: hidden; 
         backface-visibility: hidden;
       } 
       
-      /* Style the front side (fallback if image is missing) */
+    
        .flip-card-front {
         background-color: #fcf7c4;
         color: black;
       } 
       
-      /* Style the back side */
+
      .flip-card-back {
         background-color: transparent;
         color: black;
@@ -678,7 +812,6 @@ input[type=text]:focus {
     }
 
     nav ul {
-        display: flex;
         flex-direction: row;
         justify-content: flex-end;
     }
