@@ -853,16 +853,16 @@ input[type=text]:focus {
     }
 
     .flip-card-inner{
-        transition: transform none;
+        transition: none;
     }
 
-    .flip-card:hover .flip-card-inner {
+    /* .flip-card:hover .flip-card-inner {
         transform: none;
       } 
 
       .flip-card:focus-within .flip-card-inner {
         transform: none;
-      } 
+      }  */
 
     #adobelogo{
         animation: none;
